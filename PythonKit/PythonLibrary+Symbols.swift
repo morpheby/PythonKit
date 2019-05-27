@@ -213,3 +213,21 @@ let PyNumber_InPlaceMultiply: PyBinaryOperation =
 
 let PyNumber_InPlaceTrueDivide: PyBinaryOperation =
   PythonLibrary.loadSymbol(name: "PyNumber_InPlaceTrueDivide")
+
+let PyGILState_Ensure: @convention(c) () -> UnsafeRawPointer =
+    PythonLibrary.loadSymbol(name: "PyGILState_Ensure")
+
+let PyGILState_Release: @convention(c) (UnsafeRawPointer) -> Void =
+    PythonLibrary.loadSymbol(name: "PyGILState_Release")
+
+let PyEval_InitThreads: @convention(c) () -> Void =
+    PythonLibrary.loadSymbol(name: "PyEval_InitThreads")
+
+let PyEval_SaveThread: @convention(c) () -> UnsafeRawPointer =
+    PythonLibrary.loadSymbol(name: "PyEval_SaveThread")
+
+let PyEval_RestoreThread: @convention(c) (UnsafeRawPointer) -> Void =
+    PythonLibrary.loadSymbol(name: "PyEval_RestoreThread")
+
+let Py_Finalize: @convention(c) () -> Void =
+    PythonLibrary.loadSymbol(name: "Py_Finalize")

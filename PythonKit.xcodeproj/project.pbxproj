@@ -7,49 +7,132 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F7BADFD229C000C00C30DF7 /* PythonLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BADFB229C000C00C30DF7 /* PythonLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BAE0E229C00B200C30DF7 /* bzlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BAE0C229C00B200C30DF7 /* bzlib.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BAEAB229C010200C30DF7 /* openssl in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BAEAA229C010200C30DF7 /* openssl */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BAEC0229C011400C30DF7 /* lzma.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BAEAF229C011400C30DF7 /* lzma.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BAED0229C012200C30DF7 /* lzma in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BAECF229C012200C30DF7 /* lzma */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB078229C017000C30DF7 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = 8F7BB076229C017000C30DF7 /* lib */; };
+		8F7BB079229C017000C30DF7 /* include in Resources */ = {isa = PBXBuildFile; fileRef = 8F7BB077229C017000C30DF7 /* include */; };
+		8F7BB07E229C025D00C30DF7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7BB07D229C025D00C30DF7 /* libz.tbd */; };
+		8F7BB080229C026700C30DF7 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7BB07F229C026700C30DF7 /* libsqlite3.tbd */; };
+		8F7BB082229C14D300C30DF7 /* libxz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7BAEAD229C011400C30DF7 /* libxz.a */; };
+		8F7BB083229C14D600C30DF7 /* libOpenSSL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7BAE10229C00EF00C30DF7 /* libOpenSSL.a */; };
+		8F7BB084229C14D900C30DF7 /* libbzip2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7BAE0A229C00B200C30DF7 /* libbzip2.a */; };
+		8F7BB085229C153400C30DF7 /* PythonLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7BADF9229C000B00C30DF7 /* PythonLib.framework */; };
+		8F7BB0EA229C16EC00C30DF7 /* opcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB086229C16E300C30DF7 /* opcode.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB0EB229C16EC00C30DF7 /* odictobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB087229C16E300C30DF7 /* odictobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB0EC229C16EC00C30DF7 /* moduleobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB088229C16E300C30DF7 /* moduleobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB0ED229C16EC00C30DF7 /* objimpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB089229C16E300C30DF7 /* objimpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB0EE229C16EC00C30DF7 /* pymath.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB08A229C16E300C30DF7 /* pymath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB0EF229C16EC00C30DF7 /* pyhash.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB08B229C16E300C30DF7 /* pyhash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB0F0229C16EC00C30DF7 /* bitset.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB08C229C16E300C30DF7 /* bitset.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB0F1229C16EC00C30DF7 /* context.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB08D229C16E300C30DF7 /* context.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB0F2229C16EC00C30DF7 /* code.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB08E229C16E300C30DF7 /* code.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB0F3229C16EC00C30DF7 /* parsetok.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB08F229C16E300C30DF7 /* parsetok.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB0F4229C16EC00C30DF7 /* pystrtod.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB090229C16E400C30DF7 /* pystrtod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB0F5229C16EC00C30DF7 /* pystate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB091229C16E400C30DF7 /* pystate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB0F6229C16EC00C30DF7 /* longobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB092229C16E400C30DF7 /* longobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB0F7229C16EC00C30DF7 /* namespaceobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB093229C16E400C30DF7 /* namespaceobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB0F8229C16EC00C30DF7 /* structseq.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB094229C16E400C30DF7 /* structseq.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB0F9229C16EC00C30DF7 /* genobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB095229C16E400C30DF7 /* genobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB0FA229C16EC00C30DF7 /* sysmodule.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB096229C16E400C30DF7 /* sysmodule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB0FB229C16EC00C30DF7 /* sliceobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB097229C16E400C30DF7 /* sliceobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB0FC229C16EC00C30DF7 /* warnings.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB098229C16E400C30DF7 /* warnings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB0FD229C16EC00C30DF7 /* ast.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB099229C16E400C30DF7 /* ast.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB0FE229C16EC00C30DF7 /* setobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB09A229C16E400C30DF7 /* setobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB0FF229C16EC00C30DF7 /* ceval.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB09B229C16E400C30DF7 /* ceval.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB100229C16EC00C30DF7 /* complexobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB09C229C16E400C30DF7 /* complexobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB101229C16EC00C30DF7 /* pycapsule.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB09D229C16E500C30DF7 /* pycapsule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB102229C16EC00C30DF7 /* pyexpat.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB09E229C16E500C30DF7 /* pyexpat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB103229C16EC00C30DF7 /* dtoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB09F229C16E500C30DF7 /* dtoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB104229C16EC00C30DF7 /* descrobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0A0229C16E500C30DF7 /* descrobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB105229C16EC00C30DF7 /* eval.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0A1229C16E500C30DF7 /* eval.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB106229C16EC00C30DF7 /* dynamic_annotations.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0A2229C16E500C30DF7 /* dynamic_annotations.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB107229C16EC00C30DF7 /* grammar.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0A3229C16E500C30DF7 /* grammar.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB108229C16EC00C30DF7 /* rangeobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0A4229C16E500C30DF7 /* rangeobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB109229C16EC00C30DF7 /* marshal.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0A5229C16E500C30DF7 /* marshal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB10A229C16EC00C30DF7 /* pyfpe.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0A6229C16E500C30DF7 /* pyfpe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB10B229C16EC00C30DF7 /* typeslots.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0A7229C16E500C30DF7 /* typeslots.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB10C229C16EC00C30DF7 /* pythonrun.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0A8229C16E600C30DF7 /* pythonrun.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB10D229C16EC00C30DF7 /* floatobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0A9229C16E600C30DF7 /* floatobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB10E229C16EC00C30DF7 /* pystrcmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0AA229C16E600C30DF7 /* pystrcmp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB10F229C16EC00C30DF7 /* patchlevel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0AB229C16E600C30DF7 /* patchlevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB110229C16EC00C30DF7 /* frameobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0AC229C16E600C30DF7 /* frameobject.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB111229C16EC00C30DF7 /* cellobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0AD229C16E600C30DF7 /* cellobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB112229C16EC00C30DF7 /* pymem.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0AE229C16E600C30DF7 /* pymem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB113229C16EC00C30DF7 /* pyatomic.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0AF229C16E600C30DF7 /* pyatomic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB114229C16EC00C30DF7 /* boolobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0B0229C16E600C30DF7 /* boolobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB115229C16EC00C30DF7 /* pythread.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0B1229C16E600C30DF7 /* pythread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB116229C16EC00C30DF7 /* osmodule.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0B2229C16E700C30DF7 /* osmodule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB118229C16EC00C30DF7 /* bytearrayobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0B4229C16E700C30DF7 /* bytearrayobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB119229C16EC00C30DF7 /* Python.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0B5229C16E700C30DF7 /* Python.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB11A229C16EC00C30DF7 /* pyarena.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0B6229C16E700C30DF7 /* pyarena.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB11B229C16EC00C30DF7 /* modsupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0B7229C16E700C30DF7 /* modsupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB11C229C16EC00C30DF7 /* pymacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0B8229C16E700C30DF7 /* pymacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB11D229C16EC00C30DF7 /* fileutils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0B9229C16E700C30DF7 /* fileutils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB11E229C16EC00C30DF7 /* codecs.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0BA229C16E700C30DF7 /* codecs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB11F229C16EC00C30DF7 /* fileobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0BB229C16E700C30DF7 /* fileobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB120229C16EC00C30DF7 /* ucnhash.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0BC229C16E700C30DF7 /* ucnhash.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB121229C16EC00C30DF7 /* pystrhex.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0BD229C16E800C30DF7 /* pystrhex.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB123229C16EC00C30DF7 /* bltinmodule.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0BF229C16E800C30DF7 /* bltinmodule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB124229C16EC00C30DF7 /* object.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0C0229C16E800C30DF7 /* object.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB125229C16EC00C30DF7 /* iterobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0C1229C16E800C30DF7 /* iterobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB126229C16EC00C30DF7 /* weakrefobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0C2229C16E800C30DF7 /* weakrefobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB127229C16EC00C30DF7 /* methodobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0C3229C16E800C30DF7 /* methodobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB128229C16EC00C30DF7 /* pylifecycle.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0C4229C16E800C30DF7 /* pylifecycle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB129229C16EC00C30DF7 /* abstract.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0C5229C16E800C30DF7 /* abstract.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB12A229C16EC00C30DF7 /* metagrammar.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0C6229C16E800C30DF7 /* metagrammar.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB12B229C16EC00C30DF7 /* graminit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0C7229C16E800C30DF7 /* graminit.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB12C229C16EC00C30DF7 /* bytes_methods.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0C8229C16E800C30DF7 /* bytes_methods.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB12D229C16EC00C30DF7 /* tupleobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0C9229C16E900C30DF7 /* tupleobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB12E229C16EC00C30DF7 /* dictobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0CA229C16E900C30DF7 /* dictobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB12F229C16EC00C30DF7 /* pgen.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0CB229C16E900C30DF7 /* pgen.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB130229C16EC00C30DF7 /* traceback.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0CC229C16E900C30DF7 /* traceback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB131229C16EC00C30DF7 /* pgenheaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0CD229C16E900C30DF7 /* pgenheaders.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB132229C16EC00C30DF7 /* memoryobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0CE229C16E900C30DF7 /* memoryobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB133229C16EC00C30DF7 /* enumobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0CF229C16E900C30DF7 /* enumobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB134229C16EC00C30DF7 /* errcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0D0229C16E900C30DF7 /* errcode.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB135229C16EC00C30DF7 /* asdl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0D1229C16E900C30DF7 /* asdl.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB136229C16EC00C30DF7 /* import.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0D2229C16E900C30DF7 /* import.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB137229C16EC00C30DF7 /* intrcheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0D3229C16E900C30DF7 /* intrcheck.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB138229C16EC00C30DF7 /* pyerrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0D4229C16EA00C30DF7 /* pyerrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB139229C16EC00C30DF7 /* structmember.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0D5229C16EA00C30DF7 /* structmember.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB13A229C16EC00C30DF7 /* listobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0D6229C16EA00C30DF7 /* listobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB13B229C16EC00C30DF7 /* symtable.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0D7229C16EA00C30DF7 /* symtable.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB13C229C16EC00C30DF7 /* pydtrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0D8229C16EA00C30DF7 /* pydtrace.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB13D229C16EC00C30DF7 /* unicodeobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0D9229C16EA00C30DF7 /* unicodeobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB13E229C16EC00C30DF7 /* pyctype.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0DA229C16EA00C30DF7 /* pyctype.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB13F229C16EC00C30DF7 /* pymacconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0DB229C16EA00C30DF7 /* pymacconfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB140229C16EC00C30DF7 /* token.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0DC229C16EA00C30DF7 /* token.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB141229C16EC00C30DF7 /* datetime.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0DD229C16EA00C30DF7 /* datetime.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB142229C16EC00C30DF7 /* accu.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0DE229C16EA00C30DF7 /* accu.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB143229C16EC00C30DF7 /* pydebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0DF229C16EB00C30DF7 /* pydebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB144229C16EC00C30DF7 /* funcobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0E0229C16EB00C30DF7 /* funcobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB145229C16EC00C30DF7 /* classobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0E1229C16EB00C30DF7 /* classobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB146229C16EC00C30DF7 /* node.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0E2229C16EB00C30DF7 /* node.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB147229C16EC00C30DF7 /* longintrepr.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0E3229C16EB00C30DF7 /* longintrepr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB148229C16EC00C30DF7 /* compile.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0E4229C16EB00C30DF7 /* compile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB149229C16EC00C30DF7 /* pyport.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0E5229C16EB00C30DF7 /* pyport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB14A229C16EC00C30DF7 /* bytesobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0E6229C16EB00C30DF7 /* bytesobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB14B229C16EC00C30DF7 /* pyconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0E7229C16EB00C30DF7 /* pyconfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB14C229C16EC00C30DF7 /* osdefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0E8229C16EB00C30DF7 /* osdefs.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB14D229C16EC00C30DF7 /* pytime.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0E9229C16EB00C30DF7 /* pytime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB151229C176E00C30DF7 /* pyconfig-arm64.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB14E229C176E00C30DF7 /* pyconfig-arm64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB153229C176E00C30DF7 /* pyconfig-x86_64.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB150229C176E00C30DF7 /* pyconfig-x86_64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F7BB154229C1E9600C30DF7 /* Python-ast.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0BE229C16E800C30DF7 /* Python-ast.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F7BB156229C249100C30DF7 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = 8F7BB155229C249100C30DF7 /* test.c */; };
+		8F7BB157229C24C800C30DF7 /* libPython.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7BAFA6229C013B00C30DF7 /* libPython.a */; };
 		AA0B0EF5219F030700F8FFED /* NumpyConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B0EF4219F030700F8FFED /* NumpyConversion.swift */; };
 		AA0B0EF821A043C000F8FFED /* PythonLibrary+Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B0EF721A043C000F8FFED /* PythonLibrary+Symbols.swift */; };
-		AA3BAE36201E95D10082CE06 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3BAE35201E95D10082CE06 /* main.swift */; };
 		AA4C12C1212F0B6A00E855A9 /* Python.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3BAE0F201E920D0082CE06 /* Python.swift */; };
 		AA4C12D4212F522000E855A9 /* PythonLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4C12D0212F0C8600E855A9 /* PythonLibrary.swift */; };
-		AA4C12D5212F526000E855A9 /* PythonKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3BAE04201E92000082CE06 /* PythonKit.framework */; };
-		AA63769B201E9E0200D3EE43 /* LoggerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA637697201E9DE100D3EE43 /* LoggerKit.framework */; };
-		AA6376A8201E9EDB00D3EE43 /* CommandLineKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6376A4201E9EBA00D3EE43 /* CommandLineKit.framework */; };
-		AA6376AC201E9F7100D3EE43 /* OperatingSystemVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6376AB201E9F7100D3EE43 /* OperatingSystemVersion.swift */; };
 		AA9F084E222F041D00245ED0 /* PythonKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3BAE04201E92000082CE06 /* PythonKit.framework */; };
 		AA9F085A222F056900245ED0 /* PythonRuntimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9F0858222F056800245ED0 /* PythonRuntimeTests.swift */; };
 		AA9F085B222F056900245ED0 /* NumpyConversionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9F0859222F056800245ED0 /* NumpyConversionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AA3BAE43201E997A0082CE06 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AA3BADFB201E92000082CE06 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AA3BAE03201E92000082CE06;
-			remoteInfo = PythonKit;
-		};
-		AA637696201E9DE100D3EE43 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AA637691201E9DE100D3EE43 /* LoggerKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AABBD9A41E5761BD00AE5B46;
-			remoteInfo = LoggerKit;
-		};
-		AA637698201E9DE100D3EE43 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AA637691201E9DE100D3EE43 /* LoggerKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AA912BE01EE96C56002DD639;
-			remoteInfo = LoggerKitWatch;
-		};
-		AA6376A3201E9EBA00D3EE43 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AA63769F201E9EBA00D3EE43 /* CommandLineKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5D06884319674D7D00BBFAAC;
-			remoteInfo = CommandLineKit;
-		};
 		AA9F084F222F041D00245ED0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AA3BADFB201E92000082CE06 /* Project object */;
@@ -57,77 +140,158 @@
 			remoteGlobalIDString = AA3BAE03201E92000082CE06;
 			remoteInfo = PythonKit;
 		};
-		AA9F0854222F041D00245ED0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AA63769F201E9EBA00D3EE43 /* CommandLineKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AABB3B53220FB42A00DEE6F4;
-			remoteInfo = CommandLineKitTests;
-		};
-		AAF3192220BF3261008F1CAA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AA63769F201E9EBA00D3EE43 /* CommandLineKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 5D06884219674D7D00BBFAAC;
-			remoteInfo = CommandLineKit;
-		};
-		AAF3192420BF3261008F1CAA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AA637691201E9DE100D3EE43 /* LoggerKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = AABBD99C1E5761BD00AE5B46;
-			remoteInfo = LoggerKit;
-		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		AA3BAE31201E95D10082CE06 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		8F7BADF9229C000B00C30DF7 /* PythonLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PythonLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F7BADFB229C000C00C30DF7 /* PythonLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PythonLib.h; sourceTree = "<group>"; };
+		8F7BADFC229C000C00C30DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F7BAE0A229C00B200C30DF7 /* libbzip2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbzip2.a; sourceTree = "<group>"; };
+		8F7BAE0C229C00B200C30DF7 /* bzlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bzlib.h; sourceTree = "<group>"; };
+		8F7BAE10229C00EF00C30DF7 /* libOpenSSL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOpenSSL.a; sourceTree = "<group>"; };
+		8F7BAEAA229C010200C30DF7 /* openssl */ = {isa = PBXFileReference; lastKnownFileType = folder; path = openssl; sourceTree = "<group>"; };
+		8F7BAEAD229C011400C30DF7 /* libxz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libxz.a; sourceTree = "<group>"; };
+		8F7BAEAF229C011400C30DF7 /* lzma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lzma.h; sourceTree = "<group>"; };
+		8F7BAECF229C012200C30DF7 /* lzma */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lzma; sourceTree = "<group>"; };
+		8F7BAFA6229C013B00C30DF7 /* libPython.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPython.a; sourceTree = "<group>"; };
+		8F7BB076229C017000C30DF7 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = "<group>"; };
+		8F7BB077229C017000C30DF7 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		8F7BB07D229C025D00C30DF7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		8F7BB07F229C026700C30DF7 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		8F7BB086229C16E300C30DF7 /* opcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opcode.h; sourceTree = "<group>"; };
+		8F7BB087229C16E300C30DF7 /* odictobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = odictobject.h; sourceTree = "<group>"; };
+		8F7BB088229C16E300C30DF7 /* moduleobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = moduleobject.h; sourceTree = "<group>"; };
+		8F7BB089229C16E300C30DF7 /* objimpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objimpl.h; sourceTree = "<group>"; };
+		8F7BB08A229C16E300C30DF7 /* pymath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pymath.h; sourceTree = "<group>"; };
+		8F7BB08B229C16E300C30DF7 /* pyhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pyhash.h; sourceTree = "<group>"; };
+		8F7BB08C229C16E300C30DF7 /* bitset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitset.h; sourceTree = "<group>"; };
+		8F7BB08D229C16E300C30DF7 /* context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = context.h; sourceTree = "<group>"; };
+		8F7BB08E229C16E300C30DF7 /* code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = code.h; sourceTree = "<group>"; };
+		8F7BB08F229C16E300C30DF7 /* parsetok.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parsetok.h; sourceTree = "<group>"; };
+		8F7BB090229C16E400C30DF7 /* pystrtod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pystrtod.h; sourceTree = "<group>"; };
+		8F7BB091229C16E400C30DF7 /* pystate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pystate.h; sourceTree = "<group>"; };
+		8F7BB092229C16E400C30DF7 /* longobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = longobject.h; sourceTree = "<group>"; };
+		8F7BB093229C16E400C30DF7 /* namespaceobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = namespaceobject.h; sourceTree = "<group>"; };
+		8F7BB094229C16E400C30DF7 /* structseq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = structseq.h; sourceTree = "<group>"; };
+		8F7BB095229C16E400C30DF7 /* genobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genobject.h; sourceTree = "<group>"; };
+		8F7BB096229C16E400C30DF7 /* sysmodule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysmodule.h; sourceTree = "<group>"; };
+		8F7BB097229C16E400C30DF7 /* sliceobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sliceobject.h; sourceTree = "<group>"; };
+		8F7BB098229C16E400C30DF7 /* warnings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = warnings.h; sourceTree = "<group>"; };
+		8F7BB099229C16E400C30DF7 /* ast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ast.h; sourceTree = "<group>"; };
+		8F7BB09A229C16E400C30DF7 /* setobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setobject.h; sourceTree = "<group>"; };
+		8F7BB09B229C16E400C30DF7 /* ceval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ceval.h; sourceTree = "<group>"; };
+		8F7BB09C229C16E400C30DF7 /* complexobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = complexobject.h; sourceTree = "<group>"; };
+		8F7BB09D229C16E500C30DF7 /* pycapsule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pycapsule.h; sourceTree = "<group>"; };
+		8F7BB09E229C16E500C30DF7 /* pyexpat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pyexpat.h; sourceTree = "<group>"; };
+		8F7BB09F229C16E500C30DF7 /* dtoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dtoa.h; sourceTree = "<group>"; };
+		8F7BB0A0229C16E500C30DF7 /* descrobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = descrobject.h; sourceTree = "<group>"; };
+		8F7BB0A1229C16E500C30DF7 /* eval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eval.h; sourceTree = "<group>"; };
+		8F7BB0A2229C16E500C30DF7 /* dynamic_annotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dynamic_annotations.h; sourceTree = "<group>"; };
+		8F7BB0A3229C16E500C30DF7 /* grammar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = grammar.h; sourceTree = "<group>"; };
+		8F7BB0A4229C16E500C30DF7 /* rangeobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rangeobject.h; sourceTree = "<group>"; };
+		8F7BB0A5229C16E500C30DF7 /* marshal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = marshal.h; sourceTree = "<group>"; };
+		8F7BB0A6229C16E500C30DF7 /* pyfpe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pyfpe.h; sourceTree = "<group>"; };
+		8F7BB0A7229C16E500C30DF7 /* typeslots.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typeslots.h; sourceTree = "<group>"; };
+		8F7BB0A8229C16E600C30DF7 /* pythonrun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pythonrun.h; sourceTree = "<group>"; };
+		8F7BB0A9229C16E600C30DF7 /* floatobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = floatobject.h; sourceTree = "<group>"; };
+		8F7BB0AA229C16E600C30DF7 /* pystrcmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pystrcmp.h; sourceTree = "<group>"; };
+		8F7BB0AB229C16E600C30DF7 /* patchlevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = patchlevel.h; sourceTree = "<group>"; };
+		8F7BB0AC229C16E600C30DF7 /* frameobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frameobject.h; sourceTree = "<group>"; };
+		8F7BB0AD229C16E600C30DF7 /* cellobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellobject.h; sourceTree = "<group>"; };
+		8F7BB0AE229C16E600C30DF7 /* pymem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pymem.h; sourceTree = "<group>"; };
+		8F7BB0AF229C16E600C30DF7 /* pyatomic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pyatomic.h; sourceTree = "<group>"; };
+		8F7BB0B0229C16E600C30DF7 /* boolobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = boolobject.h; sourceTree = "<group>"; };
+		8F7BB0B1229C16E600C30DF7 /* pythread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pythread.h; sourceTree = "<group>"; };
+		8F7BB0B2229C16E700C30DF7 /* osmodule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osmodule.h; sourceTree = "<group>"; };
+		8F7BB0B4229C16E700C30DF7 /* bytearrayobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bytearrayobject.h; sourceTree = "<group>"; };
+		8F7BB0B5229C16E700C30DF7 /* Python.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Python.h; sourceTree = "<group>"; };
+		8F7BB0B6229C16E700C30DF7 /* pyarena.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pyarena.h; sourceTree = "<group>"; };
+		8F7BB0B7229C16E700C30DF7 /* modsupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modsupport.h; sourceTree = "<group>"; };
+		8F7BB0B8229C16E700C30DF7 /* pymacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pymacro.h; sourceTree = "<group>"; };
+		8F7BB0B9229C16E700C30DF7 /* fileutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileutils.h; sourceTree = "<group>"; };
+		8F7BB0BA229C16E700C30DF7 /* codecs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codecs.h; sourceTree = "<group>"; };
+		8F7BB0BB229C16E700C30DF7 /* fileobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileobject.h; sourceTree = "<group>"; };
+		8F7BB0BC229C16E700C30DF7 /* ucnhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ucnhash.h; sourceTree = "<group>"; };
+		8F7BB0BD229C16E800C30DF7 /* pystrhex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pystrhex.h; sourceTree = "<group>"; };
+		8F7BB0BE229C16E800C30DF7 /* Python-ast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Python-ast.h"; sourceTree = "<group>"; };
+		8F7BB0BF229C16E800C30DF7 /* bltinmodule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bltinmodule.h; sourceTree = "<group>"; };
+		8F7BB0C0229C16E800C30DF7 /* object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = object.h; sourceTree = "<group>"; };
+		8F7BB0C1229C16E800C30DF7 /* iterobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iterobject.h; sourceTree = "<group>"; };
+		8F7BB0C2229C16E800C30DF7 /* weakrefobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weakrefobject.h; sourceTree = "<group>"; };
+		8F7BB0C3229C16E800C30DF7 /* methodobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = methodobject.h; sourceTree = "<group>"; };
+		8F7BB0C4229C16E800C30DF7 /* pylifecycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pylifecycle.h; sourceTree = "<group>"; };
+		8F7BB0C5229C16E800C30DF7 /* abstract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = abstract.h; sourceTree = "<group>"; };
+		8F7BB0C6229C16E800C30DF7 /* metagrammar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metagrammar.h; sourceTree = "<group>"; };
+		8F7BB0C7229C16E800C30DF7 /* graminit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = graminit.h; sourceTree = "<group>"; };
+		8F7BB0C8229C16E800C30DF7 /* bytes_methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bytes_methods.h; sourceTree = "<group>"; };
+		8F7BB0C9229C16E900C30DF7 /* tupleobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tupleobject.h; sourceTree = "<group>"; };
+		8F7BB0CA229C16E900C30DF7 /* dictobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dictobject.h; sourceTree = "<group>"; };
+		8F7BB0CB229C16E900C30DF7 /* pgen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pgen.h; sourceTree = "<group>"; };
+		8F7BB0CC229C16E900C30DF7 /* traceback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = traceback.h; sourceTree = "<group>"; };
+		8F7BB0CD229C16E900C30DF7 /* pgenheaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pgenheaders.h; sourceTree = "<group>"; };
+		8F7BB0CE229C16E900C30DF7 /* memoryobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memoryobject.h; sourceTree = "<group>"; };
+		8F7BB0CF229C16E900C30DF7 /* enumobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enumobject.h; sourceTree = "<group>"; };
+		8F7BB0D0229C16E900C30DF7 /* errcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errcode.h; sourceTree = "<group>"; };
+		8F7BB0D1229C16E900C30DF7 /* asdl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asdl.h; sourceTree = "<group>"; };
+		8F7BB0D2229C16E900C30DF7 /* import.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = import.h; sourceTree = "<group>"; };
+		8F7BB0D3229C16E900C30DF7 /* intrcheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = intrcheck.h; sourceTree = "<group>"; };
+		8F7BB0D4229C16EA00C30DF7 /* pyerrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pyerrors.h; sourceTree = "<group>"; };
+		8F7BB0D5229C16EA00C30DF7 /* structmember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = structmember.h; sourceTree = "<group>"; };
+		8F7BB0D6229C16EA00C30DF7 /* listobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listobject.h; sourceTree = "<group>"; };
+		8F7BB0D7229C16EA00C30DF7 /* symtable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symtable.h; sourceTree = "<group>"; };
+		8F7BB0D8229C16EA00C30DF7 /* pydtrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pydtrace.h; sourceTree = "<group>"; };
+		8F7BB0D9229C16EA00C30DF7 /* unicodeobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unicodeobject.h; sourceTree = "<group>"; };
+		8F7BB0DA229C16EA00C30DF7 /* pyctype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pyctype.h; sourceTree = "<group>"; };
+		8F7BB0DB229C16EA00C30DF7 /* pymacconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pymacconfig.h; sourceTree = "<group>"; };
+		8F7BB0DC229C16EA00C30DF7 /* token.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = token.h; sourceTree = "<group>"; };
+		8F7BB0DD229C16EA00C30DF7 /* datetime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = datetime.h; sourceTree = "<group>"; };
+		8F7BB0DE229C16EA00C30DF7 /* accu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = accu.h; sourceTree = "<group>"; };
+		8F7BB0DF229C16EB00C30DF7 /* pydebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pydebug.h; sourceTree = "<group>"; };
+		8F7BB0E0229C16EB00C30DF7 /* funcobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = funcobject.h; sourceTree = "<group>"; };
+		8F7BB0E1229C16EB00C30DF7 /* classobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classobject.h; sourceTree = "<group>"; };
+		8F7BB0E2229C16EB00C30DF7 /* node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = node.h; sourceTree = "<group>"; };
+		8F7BB0E3229C16EB00C30DF7 /* longintrepr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = longintrepr.h; sourceTree = "<group>"; };
+		8F7BB0E4229C16EB00C30DF7 /* compile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compile.h; sourceTree = "<group>"; };
+		8F7BB0E5229C16EB00C30DF7 /* pyport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pyport.h; sourceTree = "<group>"; };
+		8F7BB0E6229C16EB00C30DF7 /* bytesobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bytesobject.h; sourceTree = "<group>"; };
+		8F7BB0E7229C16EB00C30DF7 /* pyconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pyconfig.h; sourceTree = "<group>"; };
+		8F7BB0E8229C16EB00C30DF7 /* osdefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osdefs.h; sourceTree = "<group>"; };
+		8F7BB0E9229C16EB00C30DF7 /* pytime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pytime.h; sourceTree = "<group>"; };
+		8F7BB14E229C176E00C30DF7 /* pyconfig-arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pyconfig-arm64.h"; sourceTree = "<group>"; };
+		8F7BB150229C176E00C30DF7 /* pyconfig-x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pyconfig-x86_64.h"; sourceTree = "<group>"; };
+		8F7BB155229C249100C30DF7 /* test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
 		AA0B0EF4219F030700F8FFED /* NumpyConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumpyConversion.swift; sourceTree = "<group>"; };
 		AA0B0EF721A043C000F8FFED /* PythonLibrary+Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PythonLibrary+Symbols.swift"; sourceTree = "<group>"; };
 		AA37F4FF203A392F0084591C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		AA3BAE04201E92000082CE06 /* PythonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PythonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA3BAE08201E92000082CE06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA3BAE0F201E920D0082CE06 /* Python.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Python.swift; sourceTree = "<group>"; };
-		AA3BAE33201E95D10082CE06 /* PythonTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PythonTool; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA3BAE35201E95D10082CE06 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		AA3BAE3C201E960E0082CE06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA3BAE0F201E920D0082CE06 /* Python.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = Python.swift; sourceTree = "<group>"; tabWidth = 2; };
 		AA4C12D0212F0C8600E855A9 /* PythonLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonLibrary.swift; sourceTree = "<group>"; };
-		AA637691201E9DE100D3EE43 /* LoggerKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoggerKit.xcodeproj; path = ../LoggerKit/LoggerKit.xcodeproj; sourceTree = "<group>"; };
-		AA63769F201E9EBA00D3EE43 /* CommandLineKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CommandLineKit.xcodeproj; path = ../CommandLineKit/CommandLineKit.xcodeproj; sourceTree = "<group>"; };
-		AA6376AB201E9F7100D3EE43 /* OperatingSystemVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatingSystemVersion.swift; sourceTree = "<group>"; };
 		AA9F0849222F041D00245ED0 /* PythonKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PythonKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA9F084D222F041D00245ED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA9F0858222F056800245ED0 /* PythonRuntimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PythonRuntimeTests.swift; sourceTree = "<group>"; };
 		AA9F0859222F056800245ED0 /* NumpyConversionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumpyConversionTests.swift; sourceTree = "<group>"; };
-		AAC566D020E0511C00F4C84C /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8F7BADF6229C000B00C30DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F7BB080229C026700C30DF7 /* libsqlite3.tbd in Frameworks */,
+				8F7BB07E229C025D00C30DF7 /* libz.tbd in Frameworks */,
+				8F7BB082229C14D300C30DF7 /* libxz.a in Frameworks */,
+				8F7BB083229C14D600C30DF7 /* libOpenSSL.a in Frameworks */,
+				8F7BB084229C14D900C30DF7 /* libbzip2.a in Frameworks */,
+				8F7BB157229C24C800C30DF7 /* libPython.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA3BAE00201E92000082CE06 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AA3BAE30201E95D10082CE06 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AA4C12D5212F526000E855A9 /* PythonKit.framework in Frameworks */,
-				AA63769B201E9E0200D3EE43 /* LoggerKit.framework in Frameworks */,
-				AA6376A8201E9EDB00D3EE43 /* CommandLineKit.framework in Frameworks */,
+				8F7BB085229C153400C30DF7 /* PythonLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,17 +306,221 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F7BADFA229C000C00C30DF7 /* PythonLib */ = {
+			isa = PBXGroup;
+			children = (
+				8F7BAED1229C013A00C30DF7 /* Python */,
+				8F7BAEAC229C011400C30DF7 /* XZ */,
+				8F7BAE0F229C00EF00C30DF7 /* OpenSSL */,
+				8F7BAE09229C00B200C30DF7 /* BZip2 */,
+				8F7BADFB229C000C00C30DF7 /* PythonLib.h */,
+				8F7BADFC229C000C00C30DF7 /* Info.plist */,
+				8F7BB155229C249100C30DF7 /* test.c */,
+			);
+			path = PythonLib;
+			sourceTree = "<group>";
+		};
+		8F7BAE09229C00B200C30DF7 /* BZip2 */ = {
+			isa = PBXGroup;
+			children = (
+				8F7BAE0A229C00B200C30DF7 /* libbzip2.a */,
+				8F7BAE0B229C00B200C30DF7 /* Headers */,
+			);
+			name = BZip2;
+			path = "python-libs/BZip2";
+			sourceTree = "<group>";
+		};
+		8F7BAE0B229C00B200C30DF7 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				8F7BAE0C229C00B200C30DF7 /* bzlib.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		8F7BAE0F229C00EF00C30DF7 /* OpenSSL */ = {
+			isa = PBXGroup;
+			children = (
+				8F7BAE10229C00EF00C30DF7 /* libOpenSSL.a */,
+				8F7BAE11229C00EF00C30DF7 /* Headers */,
+			);
+			name = OpenSSL;
+			path = "python-libs/OpenSSL";
+			sourceTree = "<group>";
+		};
+		8F7BAE11229C00EF00C30DF7 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				8F7BAEAA229C010200C30DF7 /* openssl */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		8F7BAEAC229C011400C30DF7 /* XZ */ = {
+			isa = PBXGroup;
+			children = (
+				8F7BAEAD229C011400C30DF7 /* libxz.a */,
+				8F7BAEAE229C011400C30DF7 /* Headers */,
+			);
+			name = XZ;
+			path = "python-libs/XZ";
+			sourceTree = "<group>";
+		};
+		8F7BAEAE229C011400C30DF7 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				8F7BAEAF229C011400C30DF7 /* lzma.h */,
+				8F7BAECF229C012200C30DF7 /* lzma */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		8F7BAED1229C013A00C30DF7 /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				8F7BAED2229C013A00C30DF7 /* Resources */,
+				8F7BAEDA229C013A00C30DF7 /* Headers */,
+				8F7BAFA6229C013B00C30DF7 /* libPython.a */,
+			);
+			name = Python;
+			path = "python-libs/Python";
+			sourceTree = "<group>";
+		};
+		8F7BAED2229C013A00C30DF7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8F7BB077229C017000C30DF7 /* include */,
+				8F7BB076229C017000C30DF7 /* lib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8F7BAEDA229C013A00C30DF7 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				8F7BB0C5229C16E800C30DF7 /* abstract.h */,
+				8F7BB0DE229C16EA00C30DF7 /* accu.h */,
+				8F7BB0D1229C16E900C30DF7 /* asdl.h */,
+				8F7BB099229C16E400C30DF7 /* ast.h */,
+				8F7BB08C229C16E300C30DF7 /* bitset.h */,
+				8F7BB0BF229C16E800C30DF7 /* bltinmodule.h */,
+				8F7BB0B0229C16E600C30DF7 /* boolobject.h */,
+				8F7BB0B4229C16E700C30DF7 /* bytearrayobject.h */,
+				8F7BB0C8229C16E800C30DF7 /* bytes_methods.h */,
+				8F7BB0E6229C16EB00C30DF7 /* bytesobject.h */,
+				8F7BB0AD229C16E600C30DF7 /* cellobject.h */,
+				8F7BB09B229C16E400C30DF7 /* ceval.h */,
+				8F7BB0E1229C16EB00C30DF7 /* classobject.h */,
+				8F7BB08E229C16E300C30DF7 /* code.h */,
+				8F7BB0BA229C16E700C30DF7 /* codecs.h */,
+				8F7BB0E4229C16EB00C30DF7 /* compile.h */,
+				8F7BB09C229C16E400C30DF7 /* complexobject.h */,
+				8F7BB08D229C16E300C30DF7 /* context.h */,
+				8F7BB0DD229C16EA00C30DF7 /* datetime.h */,
+				8F7BB0A0229C16E500C30DF7 /* descrobject.h */,
+				8F7BB0CA229C16E900C30DF7 /* dictobject.h */,
+				8F7BB09F229C16E500C30DF7 /* dtoa.h */,
+				8F7BB0A2229C16E500C30DF7 /* dynamic_annotations.h */,
+				8F7BB0CF229C16E900C30DF7 /* enumobject.h */,
+				8F7BB0D0229C16E900C30DF7 /* errcode.h */,
+				8F7BB0A1229C16E500C30DF7 /* eval.h */,
+				8F7BB0BB229C16E700C30DF7 /* fileobject.h */,
+				8F7BB0B9229C16E700C30DF7 /* fileutils.h */,
+				8F7BB0A9229C16E600C30DF7 /* floatobject.h */,
+				8F7BB0AC229C16E600C30DF7 /* frameobject.h */,
+				8F7BB0E0229C16EB00C30DF7 /* funcobject.h */,
+				8F7BB095229C16E400C30DF7 /* genobject.h */,
+				8F7BB0C7229C16E800C30DF7 /* graminit.h */,
+				8F7BB0A3229C16E500C30DF7 /* grammar.h */,
+				8F7BB0D2229C16E900C30DF7 /* import.h */,
+				8F7BB0D3229C16E900C30DF7 /* intrcheck.h */,
+				8F7BB0C1229C16E800C30DF7 /* iterobject.h */,
+				8F7BB0D6229C16EA00C30DF7 /* listobject.h */,
+				8F7BB0E3229C16EB00C30DF7 /* longintrepr.h */,
+				8F7BB092229C16E400C30DF7 /* longobject.h */,
+				8F7BB0A5229C16E500C30DF7 /* marshal.h */,
+				8F7BB0CE229C16E900C30DF7 /* memoryobject.h */,
+				8F7BB0C6229C16E800C30DF7 /* metagrammar.h */,
+				8F7BB0C3229C16E800C30DF7 /* methodobject.h */,
+				8F7BB0B7229C16E700C30DF7 /* modsupport.h */,
+				8F7BB088229C16E300C30DF7 /* moduleobject.h */,
+				8F7BB093229C16E400C30DF7 /* namespaceobject.h */,
+				8F7BB0E2229C16EB00C30DF7 /* node.h */,
+				8F7BB0C0229C16E800C30DF7 /* object.h */,
+				8F7BB089229C16E300C30DF7 /* objimpl.h */,
+				8F7BB087229C16E300C30DF7 /* odictobject.h */,
+				8F7BB086229C16E300C30DF7 /* opcode.h */,
+				8F7BB0E8229C16EB00C30DF7 /* osdefs.h */,
+				8F7BB0B2229C16E700C30DF7 /* osmodule.h */,
+				8F7BB08F229C16E300C30DF7 /* parsetok.h */,
+				8F7BB0AB229C16E600C30DF7 /* patchlevel.h */,
+				8F7BB0CB229C16E900C30DF7 /* pgen.h */,
+				8F7BB0CD229C16E900C30DF7 /* pgenheaders.h */,
+				8F7BB0B6229C16E700C30DF7 /* pyarena.h */,
+				8F7BB0AF229C16E600C30DF7 /* pyatomic.h */,
+				8F7BB09D229C16E500C30DF7 /* pycapsule.h */,
+				8F7BB14E229C176E00C30DF7 /* pyconfig-arm64.h */,
+				8F7BB150229C176E00C30DF7 /* pyconfig-x86_64.h */,
+				8F7BB0E7229C16EB00C30DF7 /* pyconfig.h */,
+				8F7BB0DA229C16EA00C30DF7 /* pyctype.h */,
+				8F7BB0DF229C16EB00C30DF7 /* pydebug.h */,
+				8F7BB0D8229C16EA00C30DF7 /* pydtrace.h */,
+				8F7BB0D4229C16EA00C30DF7 /* pyerrors.h */,
+				8F7BB09E229C16E500C30DF7 /* pyexpat.h */,
+				8F7BB0A6229C16E500C30DF7 /* pyfpe.h */,
+				8F7BB08B229C16E300C30DF7 /* pyhash.h */,
+				8F7BB0C4229C16E800C30DF7 /* pylifecycle.h */,
+				8F7BB0DB229C16EA00C30DF7 /* pymacconfig.h */,
+				8F7BB0B8229C16E700C30DF7 /* pymacro.h */,
+				8F7BB08A229C16E300C30DF7 /* pymath.h */,
+				8F7BB0AE229C16E600C30DF7 /* pymem.h */,
+				8F7BB0E5229C16EB00C30DF7 /* pyport.h */,
+				8F7BB091229C16E400C30DF7 /* pystate.h */,
+				8F7BB0AA229C16E600C30DF7 /* pystrcmp.h */,
+				8F7BB0BD229C16E800C30DF7 /* pystrhex.h */,
+				8F7BB090229C16E400C30DF7 /* pystrtod.h */,
+				8F7BB0BE229C16E800C30DF7 /* Python-ast.h */,
+				8F7BB0B5229C16E700C30DF7 /* Python.h */,
+				8F7BB0A8229C16E600C30DF7 /* pythonrun.h */,
+				8F7BB0B1229C16E600C30DF7 /* pythread.h */,
+				8F7BB0E9229C16EB00C30DF7 /* pytime.h */,
+				8F7BB0A4229C16E500C30DF7 /* rangeobject.h */,
+				8F7BB09A229C16E400C30DF7 /* setobject.h */,
+				8F7BB097229C16E400C30DF7 /* sliceobject.h */,
+				8F7BB0D5229C16EA00C30DF7 /* structmember.h */,
+				8F7BB094229C16E400C30DF7 /* structseq.h */,
+				8F7BB0D7229C16EA00C30DF7 /* symtable.h */,
+				8F7BB096229C16E400C30DF7 /* sysmodule.h */,
+				8F7BB0DC229C16EA00C30DF7 /* token.h */,
+				8F7BB0CC229C16E900C30DF7 /* traceback.h */,
+				8F7BB0C9229C16E900C30DF7 /* tupleobject.h */,
+				8F7BB0A7229C16E500C30DF7 /* typeslots.h */,
+				8F7BB0BC229C16E700C30DF7 /* ucnhash.h */,
+				8F7BB0D9229C16EA00C30DF7 /* unicodeobject.h */,
+				8F7BB098229C16E400C30DF7 /* warnings.h */,
+				8F7BB0C2229C16E800C30DF7 /* weakrefobject.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		8F7BB07C229C025D00C30DF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F7BB07F229C026700C30DF7 /* libsqlite3.tbd */,
+				8F7BB07D229C025D00C30DF7 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AA3BADFA201E92000082CE06 = {
 			isa = PBXGroup;
 			children = (
-				AA63769F201E9EBA00D3EE43 /* CommandLineKit.xcodeproj */,
-				AA637691201E9DE100D3EE43 /* LoggerKit.xcodeproj */,
 				AA37F4FF203A392F0084591C /* README.md */,
-				AAC566D020E0511C00F4C84C /* Package.swift */,
 				AA3BAE06201E92000082CE06 /* PythonKit */,
-				AA3BAE34201E95D10082CE06 /* PythonTool */,
 				AA9F084A222F041D00245ED0 /* PythonKitTests */,
+				8F7BADFA229C000C00C30DF7 /* PythonLib */,
 				AA3BAE05201E92000082CE06 /* Products */,
+				8F7BB07C229C025D00C30DF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,8 +528,8 @@
 			isa = PBXGroup;
 			children = (
 				AA3BAE04201E92000082CE06 /* PythonKit.framework */,
-				AA3BAE33201E95D10082CE06 /* PythonTool */,
 				AA9F0849222F041D00245ED0 /* PythonKitTests.xctest */,
+				8F7BADF9229C000B00C30DF7 /* PythonLib.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,34 +546,6 @@
 			path = PythonKit;
 			sourceTree = "<group>";
 		};
-		AA3BAE34201E95D10082CE06 /* PythonTool */ = {
-			isa = PBXGroup;
-			children = (
-				AA3BAE35201E95D10082CE06 /* main.swift */,
-				AA6376AB201E9F7100D3EE43 /* OperatingSystemVersion.swift */,
-				AA3BAE3C201E960E0082CE06 /* Info.plist */,
-			);
-			path = PythonTool;
-			sourceTree = "<group>";
-		};
-		AA637692201E9DE100D3EE43 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AA637697201E9DE100D3EE43 /* LoggerKit.framework */,
-				AA637699201E9DE100D3EE43 /* LoggerKit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AA6376A0201E9EBA00D3EE43 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AA6376A4201E9EBA00D3EE43 /* CommandLineKit.framework */,
-				AA9F0855222F041D00245ED0 /* CommandLineKitTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		AA9F084A222F041D00245ED0 /* PythonKitTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +560,119 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		8F7BADF4229C000B00C30DF7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F7BB10C229C16EC00C30DF7 /* pythonrun.h in Headers */,
+				8F7BAEAB229C010200C30DF7 /* openssl in Headers */,
+				8F7BB126229C16EC00C30DF7 /* weakrefobject.h in Headers */,
+				8F7BB144229C16EC00C30DF7 /* funcobject.h in Headers */,
+				8F7BB11F229C16EC00C30DF7 /* fileobject.h in Headers */,
+				8F7BB12D229C16EC00C30DF7 /* tupleobject.h in Headers */,
+				8F7BB13E229C16EC00C30DF7 /* pyctype.h in Headers */,
+				8F7BB113229C16EC00C30DF7 /* pyatomic.h in Headers */,
+				8F7BB0F7229C16EC00C30DF7 /* namespaceobject.h in Headers */,
+				8F7BB0EF229C16EC00C30DF7 /* pyhash.h in Headers */,
+				8F7BB0EC229C16EC00C30DF7 /* moduleobject.h in Headers */,
+				8F7BB0EE229C16EC00C30DF7 /* pymath.h in Headers */,
+				8F7BB129229C16EC00C30DF7 /* abstract.h in Headers */,
+				8F7BB145229C16EC00C30DF7 /* classobject.h in Headers */,
+				8F7BB123229C16EC00C30DF7 /* bltinmodule.h in Headers */,
+				8F7BB10D229C16EC00C30DF7 /* floatobject.h in Headers */,
+				8F7BB0FB229C16EC00C30DF7 /* sliceobject.h in Headers */,
+				8F7BB125229C16EC00C30DF7 /* iterobject.h in Headers */,
+				8F7BB10A229C16EC00C30DF7 /* pyfpe.h in Headers */,
+				8F7BB0EB229C16EC00C30DF7 /* odictobject.h in Headers */,
+				8F7BB111229C16EC00C30DF7 /* cellobject.h in Headers */,
+				8F7BB13F229C16EC00C30DF7 /* pymacconfig.h in Headers */,
+				8F7BB14D229C16EC00C30DF7 /* pytime.h in Headers */,
+				8F7BB10F229C16EC00C30DF7 /* patchlevel.h in Headers */,
+				8F7BB0FC229C16EC00C30DF7 /* warnings.h in Headers */,
+				8F7BB103229C16EC00C30DF7 /* dtoa.h in Headers */,
+				8F7BB136229C16EC00C30DF7 /* import.h in Headers */,
+				8F7BB124229C16EC00C30DF7 /* object.h in Headers */,
+				8F7BB128229C16EC00C30DF7 /* pylifecycle.h in Headers */,
+				8F7BB118229C16EC00C30DF7 /* bytearrayobject.h in Headers */,
+				8F7BB11B229C16EC00C30DF7 /* modsupport.h in Headers */,
+				8F7BB10B229C16EC00C30DF7 /* typeslots.h in Headers */,
+				8F7BB14A229C16EC00C30DF7 /* bytesobject.h in Headers */,
+				8F7BB104229C16EC00C30DF7 /* descrobject.h in Headers */,
+				8F7BB102229C16EC00C30DF7 /* pyexpat.h in Headers */,
+				8F7BB127229C16EC00C30DF7 /* methodobject.h in Headers */,
+				8F7BB114229C16EC00C30DF7 /* boolobject.h in Headers */,
+				8F7BB0F5229C16EC00C30DF7 /* pystate.h in Headers */,
+				8F7BB132229C16EC00C30DF7 /* memoryobject.h in Headers */,
+				8F7BB14B229C16EC00C30DF7 /* pyconfig.h in Headers */,
+				8F7BB0F1229C16EC00C30DF7 /* context.h in Headers */,
+				8F7BB11D229C16EC00C30DF7 /* fileutils.h in Headers */,
+				8F7BB11C229C16EC00C30DF7 /* pymacro.h in Headers */,
+				8F7BB11A229C16EC00C30DF7 /* pyarena.h in Headers */,
+				8F7BB0F4229C16EC00C30DF7 /* pystrtod.h in Headers */,
+				8F7BB130229C16EC00C30DF7 /* traceback.h in Headers */,
+				8F7BB0FA229C16EC00C30DF7 /* sysmodule.h in Headers */,
+				8F7BB0FF229C16EC00C30DF7 /* ceval.h in Headers */,
+				8F7BB138229C16EC00C30DF7 /* pyerrors.h in Headers */,
+				8F7BB13D229C16EC00C30DF7 /* unicodeobject.h in Headers */,
+				8F7BB137229C16EC00C30DF7 /* intrcheck.h in Headers */,
+				8F7BB105229C16EC00C30DF7 /* eval.h in Headers */,
+				8F7BB115229C16EC00C30DF7 /* pythread.h in Headers */,
+				8F7BB100229C16EC00C30DF7 /* complexobject.h in Headers */,
+				8F7BB143229C16EC00C30DF7 /* pydebug.h in Headers */,
+				8F7BB12E229C16EC00C30DF7 /* dictobject.h in Headers */,
+				8F7BB116229C16EC00C30DF7 /* osmodule.h in Headers */,
+				8F7BB148229C16EC00C30DF7 /* compile.h in Headers */,
+				8F7BB112229C16EC00C30DF7 /* pymem.h in Headers */,
+				8F7BB147229C16EC00C30DF7 /* longintrepr.h in Headers */,
+				8F7BB10E229C16EC00C30DF7 /* pystrcmp.h in Headers */,
+				8F7BB11E229C16EC00C30DF7 /* codecs.h in Headers */,
+				8F7BB133229C16EC00C30DF7 /* enumobject.h in Headers */,
+				8F7BB0F9229C16EC00C30DF7 /* genobject.h in Headers */,
+				8F7BB0FE229C16EC00C30DF7 /* setobject.h in Headers */,
+				8F7BB0F8229C16EC00C30DF7 /* structseq.h in Headers */,
+				8F7BB0ED229C16EC00C30DF7 /* objimpl.h in Headers */,
+				8F7BB0F6229C16EC00C30DF7 /* longobject.h in Headers */,
+				8F7BB0F2229C16EC00C30DF7 /* code.h in Headers */,
+				8F7BB101229C16EC00C30DF7 /* pycapsule.h in Headers */,
+				8F7BB13A229C16EC00C30DF7 /* listobject.h in Headers */,
+				8F7BB108229C16EC00C30DF7 /* rangeobject.h in Headers */,
+				8F7BB149229C16EC00C30DF7 /* pyport.h in Headers */,
+				8F7BB119229C16EC00C30DF7 /* Python.h in Headers */,
+				8F7BB151229C176E00C30DF7 /* pyconfig-arm64.h in Headers */,
+				8F7BB153229C176E00C30DF7 /* pyconfig-x86_64.h in Headers */,
+				8F7BAED0229C012200C30DF7 /* lzma in Headers */,
+				8F7BAEC0229C011400C30DF7 /* lzma.h in Headers */,
+				8F7BAE0E229C00B200C30DF7 /* bzlib.h in Headers */,
+				8F7BADFD229C000C00C30DF7 /* PythonLib.h in Headers */,
+				8F7BB154229C1E9600C30DF7 /* Python-ast.h in Headers */,
+				8F7BB142229C16EC00C30DF7 /* accu.h in Headers */,
+				8F7BB135229C16EC00C30DF7 /* asdl.h in Headers */,
+				8F7BB107229C16EC00C30DF7 /* grammar.h in Headers */,
+				8F7BB110229C16EC00C30DF7 /* frameobject.h in Headers */,
+				8F7BB106229C16EC00C30DF7 /* dynamic_annotations.h in Headers */,
+				8F7BB0FD229C16EC00C30DF7 /* ast.h in Headers */,
+				8F7BB0F0229C16EC00C30DF7 /* bitset.h in Headers */,
+				8F7BB12B229C16EC00C30DF7 /* graminit.h in Headers */,
+				8F7BB141229C16EC00C30DF7 /* datetime.h in Headers */,
+				8F7BB12C229C16EC00C30DF7 /* bytes_methods.h in Headers */,
+				8F7BB12A229C16EC00C30DF7 /* metagrammar.h in Headers */,
+				8F7BB134229C16EC00C30DF7 /* errcode.h in Headers */,
+				8F7BB14C229C16EC00C30DF7 /* osdefs.h in Headers */,
+				8F7BB109229C16EC00C30DF7 /* marshal.h in Headers */,
+				8F7BB146229C16EC00C30DF7 /* node.h in Headers */,
+				8F7BB13B229C16EC00C30DF7 /* symtable.h in Headers */,
+				8F7BB140229C16EC00C30DF7 /* token.h in Headers */,
+				8F7BB139229C16EC00C30DF7 /* structmember.h in Headers */,
+				8F7BB0EA229C16EC00C30DF7 /* opcode.h in Headers */,
+				8F7BB0F3229C16EC00C30DF7 /* parsetok.h in Headers */,
+				8F7BB13C229C16EC00C30DF7 /* pydtrace.h in Headers */,
+				8F7BB131229C16EC00C30DF7 /* pgenheaders.h in Headers */,
+				8F7BB12F229C16EC00C30DF7 /* pgen.h in Headers */,
+				8F7BB121229C16EC00C30DF7 /* pystrhex.h in Headers */,
+				8F7BB120229C16EC00C30DF7 /* ucnhash.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA3BAE01201E92000082CE06 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -230,6 +683,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		8F7BADF8229C000B00C30DF7 /* PythonLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F7BAE00229C000C00C30DF7 /* Build configuration list for PBXNativeTarget "PythonLib" */;
+			buildPhases = (
+				8F7BADF4229C000B00C30DF7 /* Headers */,
+				8F7BADF5229C000B00C30DF7 /* Sources */,
+				8F7BADF6229C000B00C30DF7 /* Frameworks */,
+				8F7BADF7229C000B00C30DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PythonLib;
+			productName = PythonLib;
+			productReference = 8F7BADF9229C000B00C30DF7 /* PythonLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		AA3BAE03201E92000082CE06 /* PythonKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA3BAE0C201E92000082CE06 /* Build configuration list for PBXNativeTarget "PythonKit" */;
@@ -247,26 +718,6 @@
 			productName = PythonKit;
 			productReference = AA3BAE04201E92000082CE06 /* PythonKit.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		AA3BAE32201E95D10082CE06 /* PythonTool */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AA3BAE39201E95D10082CE06 /* Build configuration list for PBXNativeTarget "PythonTool" */;
-			buildPhases = (
-				AA3BAE2F201E95D10082CE06 /* Sources */,
-				AA3BAE30201E95D10082CE06 /* Frameworks */,
-				AA3BAE31201E95D10082CE06 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AAF3192320BF3261008F1CAA /* PBXTargetDependency */,
-				AAF3192520BF3261008F1CAA /* PBXTargetDependency */,
-				AA3BAE44201E997A0082CE06 /* PBXTargetDependency */,
-			);
-			name = PythonTool;
-			productName = PythonTool;
-			productReference = AA3BAE33201E95D10082CE06 /* PythonTool */;
-			productType = "com.apple.product-type.tool";
 		};
 		AA9F0848222F041D00245ED0 /* PythonKitTests */ = {
 			isa = PBXNativeTarget;
@@ -296,12 +747,11 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Pedro José Pereira Vieito";
 				TargetAttributes = {
-					AA3BAE03201E92000082CE06 = {
-						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1020;
+					8F7BADF8229C000B00C30DF7 = {
+						CreatedOnToolsVersion = 10.2.1;
 						ProvisioningStyle = Automatic;
 					};
-					AA3BAE32201E95D10082CE06 = {
+					AA3BAE03201E92000082CE06 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
@@ -324,57 +774,25 @@
 			mainGroup = AA3BADFA201E92000082CE06;
 			productRefGroup = AA3BAE05201E92000082CE06 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = AA6376A0201E9EBA00D3EE43 /* Products */;
-					ProjectRef = AA63769F201E9EBA00D3EE43 /* CommandLineKit.xcodeproj */;
-				},
-				{
-					ProductGroup = AA637692201E9DE100D3EE43 /* Products */;
-					ProjectRef = AA637691201E9DE100D3EE43 /* LoggerKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				AA3BAE03201E92000082CE06 /* PythonKit */,
-				AA3BAE32201E95D10082CE06 /* PythonTool */,
 				AA9F0848222F041D00245ED0 /* PythonKitTests */,
+				8F7BADF8229C000B00C30DF7 /* PythonLib */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		AA637697201E9DE100D3EE43 /* LoggerKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = LoggerKit.framework;
-			remoteRef = AA637696201E9DE100D3EE43 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AA637699201E9DE100D3EE43 /* LoggerKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = LoggerKit.framework;
-			remoteRef = AA637698201E9DE100D3EE43 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AA6376A4201E9EBA00D3EE43 /* CommandLineKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CommandLineKit.framework;
-			remoteRef = AA6376A3201E9EBA00D3EE43 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AA9F0855222F041D00245ED0 /* CommandLineKitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = CommandLineKitTests.xctest;
-			remoteRef = AA9F0854222F041D00245ED0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
+		8F7BADF7229C000B00C30DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F7BB078229C017000C30DF7 /* lib in Resources */,
+				8F7BB079229C017000C30DF7 /* include in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA3BAE02201E92000082CE06 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -392,6 +810,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8F7BADF5229C000B00C30DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F7BB156229C249100C30DF7 /* test.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA3BADFF201E92000082CE06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -400,15 +826,6 @@
 				AA0B0EF821A043C000F8FFED /* PythonLibrary+Symbols.swift in Sources */,
 				AA4C12C1212F0B6A00E855A9 /* Python.swift in Sources */,
 				AA0B0EF5219F030700F8FFED /* NumpyConversion.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AA3BAE2F201E95D10082CE06 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AA6376AC201E9F7100D3EE43 /* OperatingSystemVersion.swift in Sources */,
-				AA3BAE36201E95D10082CE06 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,29 +841,79 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AA3BAE44201E997A0082CE06 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AA3BAE03201E92000082CE06 /* PythonKit */;
-			targetProxy = AA3BAE43201E997A0082CE06 /* PBXContainerItemProxy */;
-		};
 		AA9F0850222F041D00245ED0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AA3BAE03201E92000082CE06 /* PythonKit */;
 			targetProxy = AA9F084F222F041D00245ED0 /* PBXContainerItemProxy */;
 		};
-		AAF3192320BF3261008F1CAA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CommandLineKit;
-			targetProxy = AAF3192220BF3261008F1CAA /* PBXContainerItemProxy */;
-		};
-		AAF3192520BF3261008F1CAA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LoggerKit;
-			targetProxy = AAF3192420BF3261008F1CAA /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		8F7BADFE229C000C00C30DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XC6CLYZDD2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = PythonLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PythonLib/python-libs/OpenSSL",
+					"$(PROJECT_DIR)/PythonLib/python-libs/XZ",
+					"$(PROJECT_DIR)/PythonLib/python-libs/Python",
+					"$(PROJECT_DIR)/PythonLib/python-libs/BZip2",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = by.morphe.PythonLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8F7BADFF229C000C00C30DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XC6CLYZDD2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = PythonLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PythonLib/python-libs/OpenSSL",
+					"$(PROJECT_DIR)/PythonLib/python-libs/XZ",
+					"$(PROJECT_DIR)/PythonLib/python-libs/Python",
+					"$(PROJECT_DIR)/PythonLib/python-libs/BZip2",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = by.morphe.PythonLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		AA3BAE0A201E92000082CE06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -498,11 +965,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "";
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -555,10 +1021,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_SWIFT_FLAGS = "";
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -568,7 +1033,7 @@
 		AA3BAE0D201E92000082CE06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -594,7 +1059,7 @@
 		AA3BAE0E201E92000082CE06 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -612,36 +1077,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pvieito.PythonKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		AA3BAE37201E95D10082CE06 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
-				DEVELOPMENT_TEAM = T7MC635YG5;
-				INFOPLIST_FILE = PythonTool/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				LIBRARY_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pvieito.PythonTool;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		AA3BAE38201E95D10082CE06 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
-				DEVELOPMENT_TEAM = T7MC635YG5;
-				INFOPLIST_FILE = PythonTool/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				LIBRARY_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pvieito.PythonTool;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -687,6 +1122,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8F7BAE00229C000C00C30DF7 /* Build configuration list for PBXNativeTarget "PythonLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F7BADFE229C000C00C30DF7 /* Debug */,
+				8F7BADFF229C000C00C30DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AA3BADFE201E92000082CE06 /* Build configuration list for PBXProject "PythonKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -701,15 +1145,6 @@
 			buildConfigurations = (
 				AA3BAE0D201E92000082CE06 /* Debug */,
 				AA3BAE0E201E92000082CE06 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AA3BAE39201E95D10082CE06 /* Build configuration list for PBXNativeTarget "PythonTool" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AA3BAE37201E95D10082CE06 /* Debug */,
-				AA3BAE38201E95D10082CE06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

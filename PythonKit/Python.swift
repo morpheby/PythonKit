@@ -19,6 +19,8 @@
 //
 //===----------------------------------------------------------------------===//
 
+import PythonLib
+
 //===----------------------------------------------------------------------===//
 // `PyReference` definition
 //===----------------------------------------------------------------------===//
@@ -682,7 +684,7 @@ func gilEnsure<T>(_ closure: () throws -> T) rethrows -> T {
 public class PythonInterface {
   /// A dictionary of the Python builtins.
   public let builtins: PythonObject
-  let threadState: UnsafeRawPointer
+  let threadState: UnsafeMutablePointer<PyThreadState>
 
   init() {
     PyEval_InitThreads()
@@ -785,31 +787,23 @@ public extension PythonObject {
 /// Return true if the specified objects an instance of the low-level Python
 /// type descriptor passed in as 'type'.
 private func isType(_ object: PythonObject,
-                    type: PyObjectPointer) -> Bool {
+                    type: inout PyTypeObject) -> Bool {
   return gilEnsure {
-    let typePyRef = PythonObject(type)
-
-    let result = Python.isinstance(object, typePyRef)
-
-    // We cannot use the normal failable Bool initializer from `PythonObject`
-    // here because would cause an infinite loop.
-    let pyObject = result.ownedPyObject
-    defer { Py_DecRef(pyObject) }
-
-    // Anything not equal to `Py_ZeroStruct` is truthy.
-    return pyObject != _Py_ZeroStruct
+    return withUnsafePointer(to: &type) { typePtr -> Bool in
+      UnsafeRawPointer(object.borrowedPyObject.pointee.ob_type) == UnsafeRawPointer(typePtr)
+    }
   }
 }
 
 extension Bool : PythonConvertible, ConvertibleFromPython {
   public init?(_ pythonObject: PythonObject) {
     guard let value = (gilEnsure { () -> Bool? in
-      guard isType(pythonObject, type: PyBool_Type) else { return nil }
+      guard isType(pythonObject, type: &PyBool_Type) else { return nil }
 
       let pyObject = pythonObject.ownedPyObject
       defer { Py_DecRef(pyObject) }
 
-      return pyObject == _Py_TrueStruct
+      return pyObject == PyTrue
     }) else {
       return nil
     }
@@ -831,7 +825,7 @@ extension String : PythonConvertible, ConvertibleFromPython {
       let pyObject = pythonObject.ownedPyObject
       defer { Py_DecRef(pyObject) }
 
-      guard let cString = PyString_AsString(pyObject) else {
+      guard let cString = PyUnicode_AsUTF8(pyObject) else {
         PyErr_Clear()
         return nil
       }
@@ -850,7 +844,7 @@ extension String : PythonConvertible, ConvertibleFromPython {
       let v = utf8CString.withUnsafeBufferPointer {
         // 1 is subtracted from the C string length to trim the trailing null
         // character (`\0`).
-        PyString_FromStringAndSize($0.baseAddress, $0.count - 1)!
+        PyUnicode_DecodeUTF8($0.baseAddress, $0.count - 1, nil)!
       }
       return PythonObject(consuming: v)
     }
@@ -885,7 +879,7 @@ extension Int : PythonConvertible, ConvertibleFromPython {
     // `PyInt_AsLong` return -1 and sets an error if the Python object is not
     // integer compatible.
     guard let value = pythonObject.converted(withError: -1,
-                                             by: PyInt_AsLong) else {
+                                             by: PyLong_AsLong) else {
       return nil
     }
     self = value
@@ -894,7 +888,7 @@ extension Int : PythonConvertible, ConvertibleFromPython {
   public var pythonObject: PythonObject {
     _ = Python // Ensure Python is initialized.
     return gilEnsure {
-      return PythonObject(consuming: PyInt_FromLong(self))
+      return PythonObject(consuming: PyLong_FromLong(self))
     }
   }
 }
@@ -905,7 +899,7 @@ extension UInt : PythonConvertible, ConvertibleFromPython {
     // return -1 and set an error if the Python object is not integer
     // compatible.
     guard let value = pythonObject.converted(
-      withError: ~0, by: PyInt_AsUnsignedLongMask) else {
+      withError: ~0, by: PyLong_AsUnsignedLongMask) else {
       return nil
     }
     self = value
@@ -914,7 +908,7 @@ extension UInt : PythonConvertible, ConvertibleFromPython {
   public var pythonObject: PythonObject {
     _ = Python // Ensure Python is initialized.
     return gilEnsure {
-      return PythonObject(consuming: PyInt_FromSize_t(self))
+      return PythonObject(consuming: PyLong_FromSize_t(Int(bitPattern: self)))
     }
   }
 }
@@ -1174,7 +1168,7 @@ extension Range : PythonConvertible where Bound : PythonConvertible {
 
 extension Range : ConvertibleFromPython where Bound : ConvertibleFromPython {
   public init?(_ pythonObject: PythonObject) {
-    guard isType(pythonObject, type: PySlice_Type) else { return nil }
+    guard isType(pythonObject, type: &PySlice_Type) else { return nil }
     guard let lowerBound = Bound(pythonObject.start),
           let upperBound = Bound(pythonObject.stop) else {
        return nil
@@ -1194,7 +1188,7 @@ extension PartialRangeFrom : PythonConvertible where Bound : PythonConvertible {
 extension PartialRangeFrom : ConvertibleFromPython
   where Bound : ConvertibleFromPython {
   public init?(_ pythonObject: PythonObject) {
-    guard isType(pythonObject, type: PySlice_Type) else { return nil }
+    guard isType(pythonObject, type: &PySlice_Type) else { return nil }
     guard let lowerBound = Bound(pythonObject.start) else { return nil }
     guard pythonObject.stop == Python.None,
           pythonObject.step == Python.None else {
@@ -1214,7 +1208,7 @@ extension PartialRangeUpTo : PythonConvertible where Bound : PythonConvertible {
 extension PartialRangeUpTo : ConvertibleFromPython
   where Bound : ConvertibleFromPython {
   public init?(_ pythonObject: PythonObject) {
-    guard isType(pythonObject, type: PySlice_Type) else { return nil }
+    guard isType(pythonObject, type: &PySlice_Type) else { return nil }
     guard let upperBound = Bound(pythonObject.stop) else { return nil }
     guard pythonObject.start == Python.None,
           pythonObject.step == Python.None else {

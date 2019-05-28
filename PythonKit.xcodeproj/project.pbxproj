@@ -123,10 +123,10 @@
 		8F7BB154229C1E9600C30DF7 /* Python-ast.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7BB0BE229C16E800C30DF7 /* Python-ast.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		8F7BB156229C249100C30DF7 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = 8F7BB155229C249100C30DF7 /* test.c */; };
 		8F7BB157229C24C800C30DF7 /* libPython.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7BAFA6229C013B00C30DF7 /* libPython.a */; };
+		8FD7B2D1229D451C0031E466 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7B2D0229D451C0031E466 /* test.swift */; };
 		AA0B0EF5219F030700F8FFED /* NumpyConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B0EF4219F030700F8FFED /* NumpyConversion.swift */; };
 		AA0B0EF821A043C000F8FFED /* PythonLibrary+Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B0EF721A043C000F8FFED /* PythonLibrary+Symbols.swift */; };
 		AA4C12C1212F0B6A00E855A9 /* Python.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3BAE0F201E920D0082CE06 /* Python.swift */; };
-		AA4C12D4212F522000E855A9 /* PythonLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4C12D0212F0C8600E855A9 /* PythonLibrary.swift */; };
 		AA9F084E222F041D00245ED0 /* PythonKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3BAE04201E92000082CE06 /* PythonKit.framework */; };
 		AA9F085A222F056900245ED0 /* PythonRuntimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9F0858222F056800245ED0 /* PythonRuntimeTests.swift */; };
 		AA9F085B222F056900245ED0 /* NumpyConversionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9F0859222F056800245ED0 /* NumpyConversionTests.swift */; };
@@ -260,16 +260,16 @@
 		8F7BB14E229C176E00C30DF7 /* pyconfig-arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pyconfig-arm64.h"; sourceTree = "<group>"; };
 		8F7BB150229C176E00C30DF7 /* pyconfig-x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pyconfig-x86_64.h"; sourceTree = "<group>"; };
 		8F7BB155229C249100C30DF7 /* test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
+		8FD7B2D0229D451C0031E466 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		AA0B0EF4219F030700F8FFED /* NumpyConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumpyConversion.swift; sourceTree = "<group>"; };
 		AA0B0EF721A043C000F8FFED /* PythonLibrary+Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PythonLibrary+Symbols.swift"; sourceTree = "<group>"; };
 		AA37F4FF203A392F0084591C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		AA3BAE04201E92000082CE06 /* PythonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PythonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA3BAE08201E92000082CE06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA3BAE0F201E920D0082CE06 /* Python.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = Python.swift; sourceTree = "<group>"; tabWidth = 2; };
-		AA4C12D0212F0C8600E855A9 /* PythonLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonLibrary.swift; sourceTree = "<group>"; };
 		AA9F0849222F041D00245ED0 /* PythonKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PythonKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA9F084D222F041D00245ED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA9F0858222F056800245ED0 /* PythonRuntimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PythonRuntimeTests.swift; sourceTree = "<group>"; };
+		AA9F0858222F056800245ED0 /* PythonRuntimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = PythonRuntimeTests.swift; sourceTree = "<group>"; tabWidth = 2; };
 		AA9F0859222F056800245ED0 /* NumpyConversionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumpyConversionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -316,6 +316,7 @@
 				8F7BADFB229C000C00C30DF7 /* PythonLib.h */,
 				8F7BADFC229C000C00C30DF7 /* Info.plist */,
 				8F7BB155229C249100C30DF7 /* test.c */,
+				8FD7B2D0229D451C0031E466 /* test.swift */,
 			);
 			path = PythonLib;
 			sourceTree = "<group>";
@@ -538,7 +539,6 @@
 			isa = PBXGroup;
 			children = (
 				AA3BAE0F201E920D0082CE06 /* Python.swift */,
-				AA4C12D0212F0C8600E855A9 /* PythonLibrary.swift */,
 				AA0B0EF721A043C000F8FFED /* PythonLibrary+Symbols.swift */,
 				AA0B0EF4219F030700F8FFED /* NumpyConversion.swift */,
 				AA3BAE08201E92000082CE06 /* Info.plist */,
@@ -749,6 +749,7 @@
 				TargetAttributes = {
 					8F7BADF8229C000B00C30DF7 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					AA3BAE03201E92000082CE06 = {
@@ -815,6 +816,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F7BB156229C249100C30DF7 /* test.c in Sources */,
+				8FD7B2D1229D451C0031E466 /* test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -822,7 +824,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA4C12D4212F522000E855A9 /* PythonLibrary.swift in Sources */,
 				AA0B0EF821A043C000F8FFED /* PythonLibrary+Symbols.swift in Sources */,
 				AA4C12C1212F0B6A00E855A9 /* Python.swift in Sources */,
 				AA0B0EF5219F030700F8FFED /* NumpyConversion.swift in Sources */,
@@ -852,6 +853,7 @@
 		8F7BADFE229C000C00C30DF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -878,6 +880,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = by.morphe.PythonLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -885,6 +888,7 @@
 		8F7BADFF229C000C00C30DF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;

@@ -20,6 +20,7 @@
 //===----------------------------------------------------------------------===//
 
 import PythonLib
+import Foundation
 
 //===----------------------------------------------------------------------===//
 // `PyReference` definition
@@ -685,9 +686,11 @@ public class PythonInterface {
   /// A dictionary of the Python builtins.
   public let builtins: PythonObject
   let threadState: UnsafeMutablePointer<PyThreadState>
+  let homeBundlePath = Bundle(for: PyDummyClass.self).resourcePath!
 
   init() {
     PyEval_InitThreads()
+    Py_SetPythonHome(homeBundlePath.cString(using: .utf8)?.map { Int32($0) })
     Py_Initialize()   // Initialize Python
     builtins = PythonObject(PyEval_GetBuiltins())
 

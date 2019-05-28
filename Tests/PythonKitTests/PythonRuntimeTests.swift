@@ -255,6 +255,12 @@ class PythonRuntimeTests: XCTestCase {
     XCTAssertEqual(five, Double(5).pythonObject)
   }
 
+  func testImportSomeLibs() {
+    let json = Python.import("json")
+    let dic = json.loads(#"{"hey": true}"#)
+    XCTAssertEqual(dic["hey"], true)
+  }
+
   // TODO: https://bugs.swift.org/browse/SR-9230
   //  func testSR9230() {
   //    XCTAssertEqual(2, Python.len(Python.dict(a: "a", b: "b")))
